@@ -1,0 +1,22 @@
+set fileencodings=utf-8
+set relativenumber
+
+syntax enable
+
+set hlsearch
+set incsearch
+
+if has('persistent_undo')
+	let undo_path = expand('~/.vim/undo')
+	exe 'set undodir=' .. undo_path
+	set undofile
+endif
+
+set smartindent
+
+set clipboard+=unnamed
+
+set laststatus=2
+
+set wildmenu
+
